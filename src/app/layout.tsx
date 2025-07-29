@@ -2,6 +2,12 @@ import "./globals.css";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
 
+const marker = localFont({
+  src: "./fonts/PermanentMarker-Regular.ttf",
+  variable: "--font-marker",
+  weight: "400",
+});
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,10 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-[#F2AA4C] ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`bg-[#F2AA4C] ${geistSans.variable} ${geistMono.variable} ${marker.variable} antialiased`}
       >
         <header className="px-6 py-6 bg-[#101820] text-[#F2AA4C]">
-          <h1 className="text-3xl font-semibold">cxaosdev</h1>
+          <h1 className="font-marker font-black text-4xl">{"</> cxaosdev"}</h1>
         </header>
         {children}
       </body>
