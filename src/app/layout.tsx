@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-[#F2AA4C] ${geistSans.variable} ${geistMono.variable} ${marker.variable} antialiased`}
+        className={`bg-[#101820] ${geistSans.variable} ${geistMono.variable} ${marker.variable} antialiased`}
       >
         <header className="px-6 py-6 bg-[#101820] text-[#F2AA4C]">
           <h1 className="font-marker font-black text-4xl">{"</> cxaosdev"}</h1>
