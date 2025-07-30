@@ -16,10 +16,9 @@ export default async function PostPage({
   const html = marked(post.content);
 
   return (
-    <article className="prose prose-invert prose-lg md:prose-xl lg:prose-xl mx-auto px-6 py-10">
+    <article className="prose prose-invert prose-lg max-w-5xl md:prose-xl lg:prose-xl mx-auto py-10">
       <h1 className="text-center">{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   );
 }
-  
