@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
-import { getPostBySlug } from "@/lib/posts";
+import { getPostByPostId } from "@/lib/posts";
 
 export async function GET(
   req: Request,
-  { params }: { params: { slug: string } }
+  { params }: { params: { postId: string } }
 ) {
-  const post = getPostBySlug(params.slug);
+  const post = getPostByPostId(params.postId);
 
   if (!post) {
     return NextResponse.json(null, { status: 404 });

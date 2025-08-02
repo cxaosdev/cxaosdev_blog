@@ -4,9 +4,9 @@ import { notFound } from "next/navigation";
 export default async function PostPage({
   params,
 }: {
-  params: { slug: string };
+  params: { postId: string };
 }) {
-  const res = await fetch(`http://localhost:3000/api/posts/${params.slug}`, {
+  const res = await fetch(`http://localhost:3000/api/posts/${params.postId}`, {
     cache: "no-store",
   });
 

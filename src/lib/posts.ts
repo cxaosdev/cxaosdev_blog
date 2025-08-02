@@ -1,6 +1,6 @@
 export const posts = [
   {
-    slug: "start-blog",
+    postId: "start-blog",
     title: "블로그 시작! 계획과 구조",
     content: `
 <p align="center">
@@ -36,7 +36,7 @@ export const posts = [
     `,
   },
   {
-    slug: "why-next",
+    postId: "why-next",
     title: "왜 Next일까?",
     content: `
 ## 왜 Next일까?
@@ -101,6 +101,6 @@ Next.js는 Vercel을 통해 무료 배포가 쉽고 빠르며, 실제 서비스�
   },
 ];
 
-export function getPostBySlug(slug: string) {
-  return posts.find((post) => post.slug === slug);
+export function getPostByPostId(postId: string) {
+  return posts.find((post) => post.postId === postId);
 }
