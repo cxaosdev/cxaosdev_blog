@@ -99,8 +99,30 @@ Next.js 14은 서버 액션, 서버 컴포넌트 등 기능으로 이것들의 �
 Next.js는 Vercel을 통해 무료 배포가 쉽고 빠르며, 실제 서비스처럼 운영할 수 있다.
     `,
   },
+  {
+    postId: "dummy1",
+    title: "테스트",
+    content: `# 테스트 
+  ### 테스트`,
+  },
+  {
+    postId: "dummy2",
+    title: "테스트2",
+    content: `# 테스트
+  ### 테스트`,
+  },
+  {
+    postId: "dummy3",
+    title: "테스트3",
+    content: `# 테스트 
+  ### 테스트`,
+  },
 ];
 
 export function getPostByPostId(postId: string) {
   return posts.find((post) => post.postId === postId);
+}
+
+export function getAllPosts() {
+  return posts;
 }
