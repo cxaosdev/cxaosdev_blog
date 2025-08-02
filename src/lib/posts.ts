@@ -1,7 +1,11 @@
-export const posts = [
+import type { Post } from "@/types/post";
+
+export const posts: Post[] = [
   {
     postId: "start-blog",
     title: "블로그 시작! 계획과 구조",
+    tags: [],
+    thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `
 <p align="center">
   <img src="https://velog.velcdn.com/images/cxaosdev/post/bf2ca8c7-1838-44d6-b0a2-2bc92f27bfd2/image.png" />
@@ -38,6 +42,8 @@ export const posts = [
   {
     postId: "why-next",
     title: "왜 Next일까?",
+    tags: [],
+    thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `
 ## 왜 Next일까?
 
@@ -102,18 +108,24 @@ Next.js는 Vercel을 통해 무료 배포가 쉽고 빠르며, 실제 서비스�
   {
     postId: "dummy1",
     title: "테스트",
+    tags: [],
+    thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `# 테스트 
   ### 테스트`,
   },
   {
     postId: "dummy2",
     title: "테스트2",
+    tags: [],
+    thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `# 테스트
   ### 테스트`,
   },
   {
     postId: "dummy3",
     title: "테스트3",
+    tags: [],
+    thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `# 테스트 
   ### 테스트`,
   },

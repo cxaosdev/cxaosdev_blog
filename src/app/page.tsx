@@ -8,6 +8,7 @@ export default function Home() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-16">
+      {/* Tags */}
       <section className="mb-8">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-3xl font-bold text-white">Tags</h2>
@@ -23,8 +24,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* 게시글 목록 */}
+      {/* Posts */}
       <section className="mb-8">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-3xl font-bold text-white">Posts</h2>
@@ -33,11 +33,9 @@ export default function Home() {
           {posts.map((post) => (
             <Link key={post.postId} href={`/posts/${post.postId}`}>
               <div className="group cursor-pointer">
-                {/* 임시 이미지 */}
                 <img
-                  src="https://placehold.co/400x300?text=Post+Image"
-                  alt="placeholder"
-                  className="rounded-xl group-hover:opacity-80"
+                  src={post.thumbnail}
+                  className="w-full object-cover rounded-xl group-hover:opacity-80 transition"
                 />
                 <h3 className="mt-4 text-lg font-medium text-[#F2AA4C] transition line-clamp-2">
                   {post.title}
