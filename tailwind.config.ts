@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        black: "var(#101820)",
-        orange: "var(#F2AA4C)",
+        primary: "#F2AA4C",
+        dark: "#1A1A1A",
       },
       fontFamily: {
         marker: ["var(--font-marker)", "cursive"],

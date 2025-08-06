@@ -17,7 +17,7 @@ export default function Home() {
           {dummyTags.map((tag) => (
             <span
               key={tag}
-              className="text-sm text-[#F2AA4C] font-semibold border border-[#F2AA4C] px-3 py-1 rounded-full transition hover:scale-105 cursor-pointer"
+              className="text-sm text-primary font-semibold border border-primary px-3 py-1 rounded-full transition hover:scale-105 cursor-pointer"
             >
               #{tag}
             </span>
@@ -37,7 +37,7 @@ export default function Home() {
                   src={post.thumbnail}
                   className="w-full object-cover rounded-xl group-hover:opacity-80 transition"
                 />
-                <h3 className="mt-4 text-lg font-medium text-[#F2AA4C] transition line-clamp-2">
+                <h3 className="mt-4 text-lg font-medium text-primary transition">
                   {post.title}
                 </h3>
               </div>
