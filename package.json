@@ -12,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.16",
     "highlight.js": "^11.11.1",
     "marked": "^16.1.1",

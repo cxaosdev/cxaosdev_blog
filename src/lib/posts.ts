@@ -4,7 +4,7 @@ export const posts: Post[] = [
   {
     postId: "start-blog",
     title: "블로그 시작! 계획과 구조",
-    tags: [],
+    tags: ["NextJS", "TypeScript"],
     thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `
 <p align="center">
@@ -42,7 +42,7 @@ export const posts: Post[] = [
   {
     postId: "why-next",
     title: "왜 Next일까?",
-    tags: [],
+    tags: ["NextJS"],
     thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `
 ## 왜 Next일까?
@@ -108,7 +108,7 @@ Next.js는 Vercel을 통해 무료 배포가 쉽고 빠르며, 실제 서비스�
   {
     postId: "dummy1",
     title: "테스트",
-    tags: [],
+    tags: ["NextJS"],
     thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `# 테스트 
   ### 테스트`,
@@ -116,15 +116,15 @@ Next.js는 Vercel을 통해 무료 배포가 쉽고 빠르며, 실제 서비스�
   {
     postId: "dummy2",
     title: "테스트2",
-    tags: [],
+    tags: ["JavaScript"],
     thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `# 테스트
   ### 테스트`,
   },
   {
     postId: "dummy3",
-    title: "테스트3",
-    tags: [],
+    title: "두줄두줄 두줄 두줄두줄 두줄두줄두줄두줄 ",
+    tags: ["JavaScript"],
     thumbnail: "https://placehold.co/400x300?text=Post+Image",
     content: `# 테스트 
   ### 테스트`,
